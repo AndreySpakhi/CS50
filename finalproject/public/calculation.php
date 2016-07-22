@@ -65,7 +65,7 @@
         $rows = CS50::query("SELECT h_section, v_section, g_section, t_section FROM coretype WHERE description=?", $_POST["coretype"]);
         $row = $rows[0];
         $Hsection = $row["h_section"];
-        $Vsection = $row["V_section"];
+        $Vsection = $row["v_section"];
         $Gsection = $row["g_section"];
         $Tsection = $row["t_section"];
         
@@ -81,7 +81,9 @@
         
         $Msumm = $Vsumm * 7.8;
         
+        $_SESSION["Mass"] = $Msumm;
         
+        render ("calculation_result_form.php", ["title" => "Calculation Result"]);
        
     }
 ?>

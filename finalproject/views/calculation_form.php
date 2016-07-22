@@ -1,3 +1,4 @@
+
 <form action="calculation.php" method="post">
 <table class="table table-striped">
 
@@ -76,17 +77,5 @@
     </tbody>
 </table>
             <input type="submit" value="Calculate">
-<table class="table table-striped">
-
-    <thead>
-        <tr>
-            <td><strong>Core mass</strong></td>
-        </tr>
-    </thead>
-    
-    <tbody>
-            <td><input type="text" name="coremass" value = "$Msumm"></td>
-    </tbody>
-</table>
 
 </form>
